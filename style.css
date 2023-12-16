@@ -1,0 +1,278 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: #000B0A;
+    --grey: #737373;
+    --accent-color: #2EC4B6;
+    --bg-color: rgb(46, 194, 179, 0.04);  
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+/* End of CSS resets */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 120px;
+    padding-inline: 3rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+p{
+    font-size: 1rem;
+    color: var(--grey);
+    max-width: 510px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.logo{
+    width: 77.3px;
+    height: 80px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: -5px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text p{
+    font-weight: 300;
+    max-width: 460px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 12rem;
+}
+
+
+span{
+    color: var(--accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Default styles for highlighting */
+label{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .1px;
+}
+
+input:focus, select:focus {
+   outline: none;
+   
+}
+
+
+/* END OF Default styles for highlighting */
+
+
+
+
+form{
+    padding-top: 1rem;
+}
+
+.right{
+    width: 100%;
+    max-width: 580px;
+    padding-inline: 30px;
+    height: 679px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.same-line {
+    display: flex;
+    width: 100%;
+}
+
+
+.grey{
+    padding: 10px;
+    height: 36px;
+    border: none;
+    margin: 0;
+    border-radius: 2px;
+}
+
+.datePicker{
+    -webkit-appearance: none;
+}
+
+.same-line > div, .block  {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5px 20px;
+}
+
+.same-line div label, .block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: .7rem;
+}
+
+.same-line div input,
+.same-line div select, .block input, .block select {
+    height: 50px;
+    border: none;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    background-color: #ffffff;
+
+
+}
+
+.block select option:hover{
+    height: 80px;
+    background-color: var(--accent-color);
+
+}
+
+
+.block {
+    display: flex;
+    align-items: flex-start;
+    width: 100%; /* Adjust the width as needed */
+}
+
+.p-eye {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.p-eye input{
+    width: 100%;
+}
+
+.block input[type="password"] {
+    width: 100%; 
+    padding: 8px; 
+}
+
+
+input::placeholder, select:enabled, select option{
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.password-eye{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-eye img{
+    padding-right: 20px;
+}
+
+
+
+.btn{
+    padding: 5px 20px;
+
+}
+
+.btn p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+button{
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+}
+
+button a{
+    display: block;
+    padding-block: 16px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+
+}
+
+
+/* THIS IS FOR MEDIA QUERIES */
+
+
+@media (max-width: 840px) {
+    main{
+        flex-direction: column;
+        gap: 40px;
+        padding-inline: 1.3rem;
+    }
+    .right{
+        max-width: 580px;
+        height: fit-content;
+
+    }
+    .left{
+        margin-bottom: 0.01rem;
+    }
+
+
+    .same-line{
+        display: block;
+    }
+
+    .logo{
+        width: 49px;
+
+    }
+    
+
+    
+}
+
